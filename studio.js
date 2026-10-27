@@ -859,6 +859,8 @@ function localizeDownloadMenu(){
 }
 function localizePreviewControls(){
   const en=lang==="en";
+  const pngButton=document.getElementById("preview-download-png");
+  if(pngButton)pngButton.textContent=en?"Download PNG":"Скачать PNG";
   const gifButton=document.getElementById("download-gif");
   const gifLabel=document.getElementById("gif-duration-label");
   const gifQuality=document.getElementById("gif-quality");
@@ -900,6 +902,7 @@ async function downloadImage(button){
   finally{button.disabled=false;button.innerHTML=original;}
 }
 $("#confirm-export").addEventListener("click",async()=>{if(await downloadImage($("#confirm-export")))$("#export-dialog").close();});
+$("#preview-download-png").addEventListener("click",()=>downloadImage($("#preview-download-png")));
 function renderShareOptions(){const select=$("#share-template"),value=select.value||"story";select.innerHTML=Object.keys(SHARE_TEMPLATES).map(id=>'<option value="'+id+'">'+escape(t("share"+id[0].toUpperCase()+id.slice(1)))+'</option>').join("");select.value=value;}
 function updateShareLink(){const publicUrl=location.hostname.endsWith(".github.io")?location.origin+location.pathname.replace(/index\.html$/i,""):"";$("#share-open").href=shareIntent($("#share-text").value,publicUrl);}
 $("#share").addEventListener("click",()=>{renderShareOptions();if(!$("#share-text").value)$("#share-text").value=SHARE_TEMPLATES[$("#share-template").value];updateShareLink();$("#share-dialog").showModal();});
