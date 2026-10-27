@@ -1,0 +1,18 @@
+POCKET DRAGONS CREATOR KIT
+Version 0.8.0, published 15 October 2026
+
+OWNER POLICY: Free noncommercial products only. Paid access, ads, sponsorship,
+subscriptions, paid features, affiliate income, project-linked donations and
+other revenue/commercial uses require separate written permission.
+Contact hello@pocketdragons.io before proceeding with those uses.
+
+This is the published Creator Kit. TERMS.txt is the licence its artwork is
+shared under, in force from 15 October 2026, for the artwork listed in
+assets.json. Read kit/START-HERE.txt and the guides.
+
+Only flattened 2D artwork, prepared audio and guidance are supplied. The songs
+are not covered by the artwork licence: each stays its creator's, credited in
+CREDITS.txt; to use one in a project, credit its creator and ask the team
+first. No reusable UI, website CSS/tokens, font files, code templates or
+private production sources are shared. Community projects must have their own
+interfaces and an independent identity.
