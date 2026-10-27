@@ -766,6 +766,7 @@ $("#create-story").addEventListener("click",async()=>{
   const format=state.format;
   state=makeTemplate("blank");
   state.format=format;
+  state.transparent=true;
   selected=null;
   commit();
   renderLibrary();
